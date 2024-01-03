@@ -23,6 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
+#SECRET_KEY='django-insecure-(p7nqpwvy89rng=sw8#i3o7bman+j7j14ru!c##o!dv^*3#0b#'
 # 'django-insecure-(p7nqpwvy89rng=sw8#i3o7bman+j7j14ru!c##o!dv^*3#0b#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -124,8 +125,8 @@ USE_TZ = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-MEDIA_URL = 'media/'
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
